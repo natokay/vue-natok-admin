@@ -119,7 +119,7 @@
         <el-form-item label="公网端口" prop="portNum" :label-width="dialogFormLabelWidth">
           <el-input v-model.trim="dialogForm.portNum" placeholder="公网端口，必填" />
         </el-form-item>
-        <el-form-item label="域名绑定" prop="domain" :label-width="dialogFormLabelWidth">
+        <el-form-item v-show="fale" label="域名绑定" prop="domain" :label-width="dialogFormLabelWidth">
           <el-input v-model.trim="dialogForm.domain" placeholder="二级域名，可选" />
         </el-form-item>
         <el-form-item label="内网地址" prop="intranet" :label-width="dialogFormLabelWidth">
